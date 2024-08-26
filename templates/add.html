@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Add a New Entry</h1>
+<form method="POST" action="{{ url_for('add_entry') }}" class="entry-form">
+	<div class="form-group">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+	</div>
+	<div class="form-group">
+		<label for="number">Number:</label>
+		<input type="text" id="number" name="number" required>
+	</div>
+	<div class="form-group">
+		<label for="family_members">Number of Family Members:</label>
+		<input type="number" id="family_members" name="family_members" required>
+	</div>
+	<div class="form-group">
+		<input type="submit" value="Add Entry" class="submit-btn">
+	</div>
+</form>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>View Entries</h1>
+{% if data %}
+	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Number</th>
+				<th>Number of Family Members</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for entry in data %}
+			<tr>
+				<td>{{ entry.name }}</td>
+				<td>{{ format_number(entry.number) }}</td>
+				<td>{{ entry.family_members }}</td>
+			</tr>
+			{% endfor %}
+			<tr>
+				<td colspan="2"><strong>Total Family Members</strong></td>
+				<td><strong>{{ data | sum(attribute='family_members') }}</strong></td>
+			</tr>
+		</tbody>
+	</table>
+{% else %}
+	<p>No entries found.</p>
+{% endif %}
+{% endblock %}
