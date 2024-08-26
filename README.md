@@ -4,7 +4,7 @@ The guide below is for the people whome are not familiar with programming.
 - This is a Python-Flask Application so you have to install Python3 and Flask in you system.
 - Try to use Android Device to use this simple application, and Use Termux Android.
 
-[+] Termux --> <a href="https://f-droid.org/repo/com.termux_1020.apk">download Termux F-Droid Version</a>
+- [x] Termux --> <a href="https://f-droid.org/repo/com.termux_1020.apk">download Termux F-Droid Version</a>
 - Open Termux -> run `pkg install python` after python installation now install flaks through -> `python -m pip install flask` or `pip install flask`.
 - After installing `python` and `flask` run `pkg install git` command.
 - After installing `git` using `pkg install git` you have to copy/clone this github repository in your device.
