@@ -1,7 +1,8 @@
 # Basic Guide for newbees.
 The guide below is for the people whome are not familiar with programming.
 
-– This is a Python-Flask Application so you have to install Python3 and Flask in you system.
+- [] This is a Python-Flask Application so you have to install Python3 and Flask in you system.
+
 - Try to use Android Device to use this simple application, and Use Termux Android.
 
 - [x] Termux --> <a href="https://f-droid.org/repo/com.termux_1020.apk">download Termux F-Droid Version</a>
